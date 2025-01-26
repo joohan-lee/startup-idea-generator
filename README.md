@@ -15,3 +15,13 @@ To run the app, enter:
 ```bash
 $ streamlit run app.py
 ```
+
+# Deploy with streamlit cloud
+
+- Go to 'https://share.streamlit.io/deploy'
+
+1. Create app
+2. Deploy a public app from GitHub
+3. Enter GitHub URL to streamlit_app.py
+4. Click on Deploy
+5. Access the given URL.
