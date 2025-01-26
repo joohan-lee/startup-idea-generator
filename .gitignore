@@ -1,0 +1,10 @@
+.env
+venv-test/
+
+# Python
+*.pyc
+*.pyo
+__pycache__/
+
+# Streamlit cache
+.streamlit/
