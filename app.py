@@ -3,11 +3,13 @@ import streamlit as st
 import os
 import textwrap
 import json
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # Set up Cohere client
 COHERE_API_KEY=os.getenv("COHERE_API_KEY")
-print(f'{COHERE_API_KEY=}')
-co = cohere.ClientV2("COHERE_API_KEY") # Get your free API key: https://dashboard.cohere.com/api-keys
+co = cohere.ClientV2(COHERE_API_KEY) # Get your free API key: https://dashboard.cohere.com/api-keys
 
 def generate_idea(industry, temperature):
     
